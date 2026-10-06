@@ -1,0 +1,16 @@
+{
+  "name": "coverage-band",
+  "owner": {
+    "name": "Santiago Sosa"
+  },
+  "metadata": {
+    "description": "Test coverage above the prompt after every test run, with the change since the last run and the modules below your threshold."
+  },
+  "plugins": [
+    {
+      "name": "coverage-band",
+      "source": "./",
+      "description": "Test coverage above the prompt after every test run, with the change since the last run and the modules below your threshold."
+    }
+  ]
+}

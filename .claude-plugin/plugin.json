@@ -1,0 +1,43 @@
+{
+  "name": "coverage-band",
+  "version": "0.1.0",
+  "description": "Test coverage above the prompt after every test run, with the change since the last run and the modules below your threshold.",
+  "author": {
+    "name": "Santiago Sosa",
+    "url": "https://github.com/santtisosa"
+  },
+  "homepage": "https://github.com/santtisosa/coverage-band",
+  "repository": "https://github.com/santtisosa/coverage-band",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "mod",
+    "claude-code-mods"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "placement": {
+      "type": "string",
+      "title": "Placement",
+      "description": "hint: dim text at the end of the hint line under the prompt. band: a colored row above the prompt. status: a pinned notice under the prompt.",
+      "default": "hint",
+      "options": [
+        "hint",
+        "band",
+        "status"
+      ]
+    },
+    "threshold": {
+      "type": "number",
+      "title": "Threshold",
+      "description": "Minimum line coverage, in percent, for the whole run and for each module.",
+      "default": 80
+    },
+    "gaugeWidth": {
+      "type": "number",
+      "title": "Gauge width",
+      "description": "How many cells the coverage gauge has.",
+      "default": 10
+    }
+  }
+}
